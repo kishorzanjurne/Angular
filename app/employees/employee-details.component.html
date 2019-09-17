@@ -1,0 +1,80 @@
+<div class="panel panel-primary container padding-form">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{employee.name | uppercase }}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-12">
+            <div class="vertical-align">
+                <div class="col-xs-4">
+                    <img class="imageClass" [src]="employee.photoPath" />
+                </div>
+            </div>
+            <div class="col-xs-8" style="top: 50px;">
+                <div class="row">
+                    <div class="col-xs-6">
+                        Gender
+                    </div>
+                    <div class="col-xs-6">
+                        : {{employee.gender}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        Date Of Birth
+                    </div>
+                    <div class="col-xs-6">
+                        : {{employee.dateOfBirth | date}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        Email
+                    </div>
+                    <div class="col-xs-6">
+                        : {{employee.email | date}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        phonenumber
+                    </div>
+                    <div class="col-xs-6">
+                        : {{employee.phoneNumber}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        ContactPreferance
+                    </div>
+                    <div class="col-xs-6">
+                        : {{employee.contactPreferance}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        Department
+                    </div>
+                    <div class="col-xs-6" [ngSwitch]="employee.department">
+                        :
+                        <span *ngSwitchCase="1">Help Desk</span>
+                        <span *ngSwitchCase="2">HR</span>
+                        <span *ngSwitchCase="3">IT</span>
+                        <span *ngSwitchCase="4">Payroll</span>
+                        <span *ngSwitchDefault>N/A</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        isActive
+                    </div>
+                    <div class="col-xs-6">
+                        : {{employee.isActive}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-primary" [routerLink]="['/list']">Back To List</a>
+    </div>
+</div>
