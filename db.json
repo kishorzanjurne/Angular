@@ -1,0 +1,38 @@
+{
+  "employees": [
+    {
+            "id": 1,
+            "name": "Kishor",
+            "gender": "Male",
+            "contactPreferance": "Email",
+            "email": "henry@gmail.com",
+            "phoneNumber": 2132398373,
+            "dateOfBirth": "11/20/1972",
+            "department": "3",
+            "isActive": true,
+            "photoPath": "assets/images/image1.png"
+        },
+        {
+            "id": 2,
+            "name": "Mary",
+            "gender": "Female",
+            "contactPreferance": "Phone",
+            "phoneNumber": 2132398373,
+            "dateOfBirth": "11/20/1970",
+            "department": "2",
+            "isActive": true,
+            "photoPath": "assets/images/image1.png"
+        },
+        {
+            "id": 3,
+            "name": "John",
+            "gender": "Male",
+            "contactPreferance": "Phone",
+            "phoneNumber": 2132398373,
+            "dateOfBirth": "11/20/1975",
+            "department": "2",
+            "isActive": true,
+            "photoPath": "assets/images/image2.png"
+        }
+  ]
+}
